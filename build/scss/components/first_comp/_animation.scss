@@ -1,0 +1,59 @@
+
+// Анимация для пульсации кнопки
+
+// animation: pulse 0.2s ;
+
+@keyframes pulse {
+	0% {
+	box-shadow: 0 0 0 lightness(#0ba7d5 ) ;
+	}
+	100% {
+	box-shadow: 0 0 50px #0ba7d5 ;
+	}
+}
+
+
+// Анимация для приближения фона
+
+//  для родителя 	overflow: hidden; стили в templa
+
+@keyframes scale {
+    0%,100% {
+        transform: scale(1);
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.2) translate(30px,30px) translateZ(0);
+        transform: scale(1.2) translate(30px,30px) translateZ(0)
+    }
+}
+
+// Анимация для внутренней тени(анимация градиента)
+
+// animation: gradient 3s infinite alternate;
+
+@keyframes gradient {
+  50% {
+    background: #90c34d;
+    box-shadow:  -130px 0 150px -50px  #0ba7d5 inset;
+  }
+}
+
+@keyframes width {
+	0% {
+	width: 0;
+	}
+	100% {
+	width: 100%;
+	}
+}
+
+@keyframes background {
+	0% {
+	background-color: transparentize($m-color, 0.9);
+	}
+	100% {
+	background-color: transparentize($m-color, .1);
+	}
+}
